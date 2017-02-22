@@ -34,4 +34,10 @@ openssl x509 -noout -text -in server.crt
 Listen 443
 LoadModule ssl_module modules/mod_ssl.so
 SSLCipherSuite HIGH:MEDIUM:!3DES:!RC4:!MD5:!SSLv3:!SSLv2
+SSLHonorCipherOrder on
+SSLProtocol sll -SSLv2 -SSLv3
+```
+######cipher subcommand
+```
+openssl ciphers -V 'HIGH:MEDIUM:!aRSA'
 ```
