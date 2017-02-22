@@ -41,3 +41,9 @@ SSLProtocol sll -SSLv2 -SSLv3
 ```
 openssl ciphers -V 'HIGH:MEDIUM:!aRSA'
 ```
+
+###6. Deploying Virtual Server with TLS/SSL
+```
+apachectl configtest
+systemctl restart httpd.service
+```
