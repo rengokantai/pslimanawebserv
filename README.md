@@ -28,3 +28,10 @@ openssl x509 -req -sha256 -in server.csr -signkey server.key -out server.crt
 ```
 openssl x509 -noout -text -in server.crt
 ```
+
+###5. Understanding CipherSuites
+```
+Listen 443
+LoadModule ssl_module modules/mod_ssl.so
+SSLCipherSuite HIGH:MEDIUM:!3DES:!RC4:!MD5:!SSLv3:!SSLv2
+```
