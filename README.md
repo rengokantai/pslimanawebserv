@@ -47,3 +47,8 @@ openssl ciphers -V 'HIGH:MEDIUM:!aRSA'
 apachectl configtest
 systemctl restart httpd.service
 ```
+
+## 9.Using NGINX as a Web Server
+```
+pacman -S --noconfirm nginx
+```
